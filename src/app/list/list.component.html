@@ -1,0 +1,23 @@
+<p>list works!</p>
+<ol>
+    <li>{{names[0]}}</li> 
+    <li>{{names[1]}}</li>
+    <li>{{names[2]}}</li>
+    <li>{{names[3]}}</li>
+</ol>
+
+<ul>
+    <li *ngfor="let x of names">{{x}}</li>
+</ul>
+
+<ol>
+    @for(name of names; track name){
+        <li>{{name}}</li>
+    }
+</ol>
+
+<ul>
+    <li *ngfor="let pres of presidents">
+        {{pres.name}},{{pres.term}}
+    </li>
+</ul>
